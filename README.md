@@ -1,4 +1,4 @@
-# Osm label server  [![Build Status](https://travis-ci.org/trump-fmi/osm_label_server.svg?branch=master)](https://travis-ci.org/trump-fmi/osm_label_server)
+#Osm label server  [![Build Status](https://travis-ci.org/trump-fmi/osm_label_server.svg?branch=master)](https://travis-ci.org/trump-fmi/osm_label_server)
 
 Tool for serving OpenstreetMap (osm) points with a description label independet of the map tiles. The main purpose is serving the labels for rotation independent labeling of osm maps. It relies the data and api provided by the [runtime_datastructure](https://github.com/trump-fmi/runtime_datastructure) project. Datasets have to be provided in its format to be accesses by the osm label server. 
 
@@ -21,21 +21,9 @@ The response is in the [Geojson format](http://geojson.org/). An example with on
 ```
 
 ## Installation
-For installation via building it yourself you will need a [correctly configured](https://golang.org/doc/install#testing) go setup: 
-```sh
-go get -u github.com/trump-fmi/osm_label_server
-```
-A precompiled binary is available under the [current release](https://github.com/trump-fmi/osm_label_server/releases/latest). After extracting the tar.gz the server can be immediately started by using the start.sh as a default configuration and a default label file is included.
 
-For correct startup the binary needs access to the shared library. So you need the following calls for startup: 
-```sh
-LD_LIBRARY_PATH=LD_LIBRARY_PATH:$GOPATH/src/github.com/trump-fmi/osm_label_server/lib/
-export LD_LIBRARY_PATH
-./osm_label_server
-```
-Alternatively you can use the start.sh script located in the root directory of the project.
+For installation please refer to the github pages of the [TRUMP OSM Label Server](https://github.com/trump-fmi/osm_label_server).
 
-The server instance now runs and can be terminated by Control+C. 
 
 ## Configuration 
 The startup can be configured with parameters flags. 
